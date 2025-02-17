@@ -7,7 +7,7 @@ pub mod basic {
     use super::*;
 
     pub fn greet(_ctx: Context<Initialize>) -> Result<()> {
-        msg!("GM!");
+        msg!("Sere Mejor!");
         Ok(())
     }
 }
