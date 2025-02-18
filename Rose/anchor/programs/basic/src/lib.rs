@@ -18,3 +18,11 @@ pub mod basic {
 
 #[derive(Accounts)]
 pub struct Initialize {}
+
+#[derive(Accounts)]
+pub struct solTransfer<'info>{
+ #[Account(mut)]
+ sender: Signer<'info>
+ #[Account(mut)]
+ recipient: Systemaccount<'info>
+}
